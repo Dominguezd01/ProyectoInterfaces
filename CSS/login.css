@@ -1,0 +1,17 @@
+#wrapperLogin{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color:#242424;
+    margin: 0px auto;
+    width: 30%;
+    height: 40%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+
+
+

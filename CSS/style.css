@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+   
+    margin: 0px;
+}
+#headerIndex{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo . opciones";
+    background-color: black;
+    width: 150%;
+    height: 100px;
+    color:white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+#navIndex{
+    grid-area: "opciones";
+    align-items: right;
+    width: 100%;
+}
+#navList{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    list-style: none;
+    
+}
+#navList li{
+   margin-right: 2em;
+
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: "logo";
+}
+#nameLogo{
+    margin-left: 1em;
+}
+
+#loginButton{
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    text-decoration: none;
+    color: white;
+
+    
+}
+#loginButton:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+}
+
+.optionsIndex{
+    text-decoration: none;
+    color: white;
+}
+.optionsIndex:hover{
+    text-decoration: underline;
+}
