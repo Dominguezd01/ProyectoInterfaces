@@ -12,6 +12,10 @@
     border: 0px solid #000000;
 }
 
-
+#wrapperPage{
+    display: grid;
+    place-items: center;
+    height: 1080px;
+}
 
 
