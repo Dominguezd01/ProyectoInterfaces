@@ -1,7 +1,7 @@
 #wrapperLogin{
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    place-items: center;
     background-color:#242424;
     margin: 0px auto;
     width: 30%;
@@ -17,5 +17,18 @@
     place-items: center;
     height: 1080px;
 }
+#userEmail{
+    width: 0px;
+    height: 0px;
+    transition: 1s;
+    display: none;
+}
 
-
+#userLogo{
+    width: 100px;
+    height: 100px;
+    
+}
+#emailLogo{
+    display: inline;
+}

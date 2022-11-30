@@ -27,6 +27,8 @@ body{
     flex-direction: row;
     align-content: flex-end;
     list-style: none;
+    padding-right: 2.5em;
+
     
 }
 #navList li{
