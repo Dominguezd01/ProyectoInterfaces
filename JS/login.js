@@ -1,6 +1,4 @@
-onload = ()=>{
-    changeWidthInput(document.getElementById("userEmail"))
-}
+
 
 const changeWidthInput = (id)=>{
     id.style.width = "120px"
