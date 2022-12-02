@@ -1,1 +1,2 @@
 Herramienta crear separadores .svg -> https://www.shapedivider.app/
+Paletas de colores -> https://coolors.co/f1e4e8-e2dcde-ceb1be
