@@ -1,6 +1,8 @@
-<<<<<<< HEAD
 onload = () => {
   document.getElementById("headerIndex").style.width = innerWidth;
+  document.getElementById("headerIndex").style.width = innerWidth
+  agrandar()
+  subir()
 };
 //Prueba Fer
 
@@ -36,12 +38,7 @@ function showSlides() {
 
   botonNext.addEventListener("click", botonDerecha);
   botonPrev.addEventListener("click", botonIzquierda );
-=======
-onload = () =>{
 
-    document.getElementById("headerIndex").style.width = innerWidth
-    agrandar()
-    subir()
 }
 
 
@@ -50,5 +47,4 @@ function subir(){
 } 
 function agrandar(){
     document.getElementById("textHotel").style.fontSize = "75px"
->>>>>>> 5d41ea545c4924167a2debdf7a4b82a66e0e5f85
 }
