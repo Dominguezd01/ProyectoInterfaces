@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 body{
-    width: 100%;
+    width: 99vw;
     margin: 0px;
     background-color: #FFFCF7;
 }
@@ -12,7 +14,7 @@ body{
     grid-template-areas: 
       "logo . opciones";
     background-color:#646f7a;
-    width: 100%;
+    width: 99vw;
     height: 100px;
     color:white;
     font-size: 2em;
@@ -58,6 +60,24 @@ body{
 
     
 }
+#hotelReception{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+#textHotel{
+    position: absolute;
+    color: white;
+    margin-top: 50em;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    transition: 1s;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
 #loginButton:hover{
     background-color:#A1B5D8;
     transition: 0.7s;
@@ -80,3 +100,7 @@ body{
     margin: 0px auto;
     margin-top: 1em;
 }
+
+
+
+  
