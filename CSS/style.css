@@ -1,55 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-body{
+
+body {
     width: 99vw;
     margin: 0px;
     background-color: #FFFCF7;
 }
-#headerIndex{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "logo . opciones";
-    background-color:#646f7a;
+#main{
+    width: 100%;
+    width: 99vw;
+    margin: 0px;
+}
+#headerIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "logo . opciones";
+    background-color: #646f7a;
     width: 99vw;
     height: 100px;
-    color:white;
+    color: white;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
-#navIndex{
+#navIndex {
     grid-area: "opciones";
     align-items: right;
     width: 100%;
 }
-#navList{
+
+#navList {
     display: flex;
     flex-direction: row;
     align-content: flex-end;
     list-style: none;
     padding-left: 20em;
 
-    
-}
-#navList li{
-   margin-right: 2em;
 
 }
-#logo{
+
+#navList li {
+    margin-right: 2em;
+
+}
+
+#logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     grid-area: "logo";
 }
-#nameLogo{
+
+#nameLogo {
     margin-left: 1em;
 }
 
-#loginButton{
+#loginButton {
     padding: 0.5em;
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -58,16 +68,23 @@ body{
     text-decoration: none;
     color: white;
 
-    
+
 }
-#hotelReception{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+
+.slideshow-container {
     text-align: center;
+    width:99vw;
+    position: relative;
     
 }
-#textHotel{
+
+.mySlides {
+    display: block;
+    transition: 1s;
+    width: 100%;
+}
+
+#textHotel {
     position: absolute;
     color: white;
     margin-top: 50em;
@@ -78,105 +95,95 @@ body{
 }
 
 
-#loginButton:hover{
-    background-color:#A1B5D8;
+#loginButton:hover {
+    background-color: #A1B5D8;
     transition: 0.7s;
 }
 
-.optionsIndex{
+.optionsIndex {
     text-decoration: none;
     color: white;
 }
-.optionsIndex:hover{
+
+.optionsIndex:hover {
     text-decoration: underline;
 }
 
-#img1{
-    display: grid;
-    place-items: center;
-    background-color: #A1B5D8;
-    width: 360px;
-    height: 210px;
-    margin: 0px auto;
-    margin-top: 1em;
+
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
+#prev:hover,
+#next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
-  
-.slideshow-container{
-    max-width: 1000px;
-    position:relative;
-    margin:auto;
-   }
+/*Los estilos para el texto*/
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
 
-   .mySlides{
-    display:block;
-    
-   }
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
 
-   #prev, #next{
-    cursor:pointer;
-    position:absolute;
-    top:50%;
-    width:auto;
-    margin-top:-22px;
-    padding:16px;
-    color:white;
-    font-weight:bold;
-    font-size:18px;
-    transition:0.6s ease;
-    border-radius:0 3px 3px 0;
-   }
+/*Y finalmente las animaciones*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 
-   #next{
-    right:0;
-    border-radius:3px 0 0 3px;
-   }
+}
 
-   #prev:hover, #next:hover{
-    background-color:rgba(0,0,0,0.8);
-   }
-   
-   Los estilos para el texto
-   .text{
-    color:#f2f2f2;
-    font-size:15px;
-    padding:8px 12px;
-    position:absolute;
-    bottom:8px;
-    width:100%;
-    text-align:center;
-   }
-   
-   .numbertext{
-    color:#f2f2f2;
-    font-size:12px;
-    padding:8px 12px;
-    position:absolute;
-    top:0;
-   }
-   
-   Y finalmente las animaciones
-   .fade{
-    -webkit-animation-name:fade;
-    -webkit-animation-duration:1.5s;
-    animation-name:fade;
-    animation-duration:1.5s;
-    
-   }
-   
-   @-webkit-keyframes fade{
-    from{opacity:.4}
-    to{opacity:1}
-   }
-   
-   @keyframes fade{
-    from{opacity:.4}
-    to{opacity:1}
-   }
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
 
-   .mySlides img{
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.mySlides img {
     width: 450px;
     height: 300px;
-   }
+}
