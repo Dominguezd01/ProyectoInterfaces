@@ -1,65 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
-body {
-    width: 99vw;
+body{
+    width: 100%;
     margin: 0px;
     background-color: #FFFCF7;
 }
-#main{
+
+#headerIndex{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo . opciones";
+    background-color:#646f7a;
     width: 100%;
-    width: 99vw;
-    margin: 0px;
-}
-#headerIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "logo . opciones";
-    background-color: #646f7a;
-    width: 99vw;
     height: 100px;
-    color: white;
+    color:white;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
-#navIndex {
+#navIndex{
     grid-area: "opciones";
     align-items: right;
     width: 100%;
 }
-
-#navList {
+#navList{
     display: flex;
     flex-direction: row;
     align-content: flex-end;
     list-style: none;
     padding-left: 20em;
 
+    
+}
+#navList li{
+   margin-right: 2em;
 
 }
-
-#navList li {
-    margin-right: 2em;
-
-}
-
-#logo {
+#logo{
     display: flex;
     flex-direction: row;
     align-items: center;
     grid-area: "logo";
 }
-
-#nameLogo {
+#nameLogo{
     margin-left: 1em;
 }
 
-#loginButton {
+#loginButton{
     padding: 0.5em;
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -68,122 +59,90 @@ body {
     text-decoration: none;
     color: white;
 
-
-}
-
-.slideshow-container {
-    text-align: center;
-    width:99vw;
-    position: relative;
     
 }
-
-.mySlides {
-    display: block;
-    transition: 1s;
-    width: 100%;
+#loginButton:hover{
+    background-color:#A1B5D8;
+    transition: 0.7s;
 }
 
+.optionsIndex{
+    text-decoration: none;
+    color: white;
+}
+.optionsIndex:hover{
+    text-decoration: underline;
+}
 #textHotel {
     position: absolute;
     color: white;
     margin-top: 50em;
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
+    text-align: center;
+    width: 100%;
     transition: 1s;
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
-
-
-#loginButton:hover {
+#img1{
+    display: grid;
+    place-items: center;
     background-color: #A1B5D8;
-    transition: 0.7s;
+    width: 360px;
+    height: 210px;
+    margin: 0px auto;
+    margin-top: 1em;
 }
 
-.optionsIndex {
-    text-decoration: none;
-    color: white;
-}
+.slideshow-container{
+    position:relative;
+    margin:auto;
+   }
 
-.optionsIndex:hover {
-    text-decoration: underline;
-}
+   .mySlides{
+    display:block;
 
-
-#prev,
-#next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-#next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-#prev:hover,
-#next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/*Los estilos para el texto*/
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/*Y finalmente las animaciones*/
-.fade {
+   }
+   .mySlides > img{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+   }
+   #prev, #next{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease;
+    border-radius:0 3px 3px 0;
+   }
 
-}
+   #next{
+    right:0;
+    border-radius:3px 0 0 3px;
+   }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
+   #prev:hover, #next:hover{
+    background-color:rgba(0,0,0,0.8);
+   }
+   
+   @-webkit-keyframes fade{
+    from{opacity:.4}
+    to{opacity:1}
+   }
+   
+   @keyframes fade{
+    from{opacity:.4}
+    to{opacity:1}
+   }
 
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.mySlides img {
-    width: 450px;
-    height: 300px;
-}
+   .mySlides img{
+    width: 1920px;
+    height: 1080px;
+   }
