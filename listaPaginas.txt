@@ -1,0 +1,16 @@
+index Layout: Hecho
+
+Login -> Form Layout: Hecho
+
+Registro -> Form Layout: Hecho
+
+Habitaciones Layout: Hecho
+
+Reservas -> Form Layout: Hecho
+
+Contacto -> Form Layout: Hecho
+
+Pagina de admin -> Form Layout: Por definir
+
+Perfil (Mostrar datos) Layout: Hecho
+
