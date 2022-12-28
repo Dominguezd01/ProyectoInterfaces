@@ -16,7 +16,7 @@
 
     form {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+       
         place-items: center;
     }
 
@@ -26,7 +26,11 @@
         margin-bottom: 2em;
         place-items: center;
     }
-
+    #inputsContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
     .inputs {
         border-radius: 65px;
         width: 350px;
@@ -36,6 +40,13 @@
         transition: 0.4s;
         text-align: center;
     }
+     #submit{
+        background-color: var(--headerColor);
+     }
+
+     #submit:hover{
+        background-color: var(--supportColor);
+     }
 
     .inputs:hover {
         -webkit-box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
@@ -47,33 +58,34 @@
 
 <body>
     <form id="form">
-            <div class="inputsDiv">
-                <label>Etiquta 1</label>
-                <input type="text" class="inputs">
-            </div>
-            <div class="inputsDiv">
-                <label>Etiquta 1</label>
-                <input type="text" class="inputs">
-            </div>
-            <div class="inputsDiv">
-                <label>Etiquta 1</label>
-                <input type="text" class="inputs">
-            </div>
-            <div class="inputsDiv">
-                <label>Etiquta 1</label>
-                <input type="text" class="inputs">
-            </div>
-            <div class="inputsDiv">
-                <label>Etiquta 1</label>
-                <input type="text" class="inputs">
-            </div>
-            <div class="inputsDiv">
-                <label>Etiquta 1</label>
-                <input type="text" class="inputs">
-            </div>
-            <p></p>
-            <input class="inputs" type="submit" name="" id="">
+        <div id="inputsContainer">
 
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+        </div>
+            <input class="inputs" type="submit" name="" id="submit">
     </form>
 </body>
 
