@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --backgroundColor: #FFFCF7;
+        --headerColor: #646f7a;
+        --supportColor: #A1B5D8;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    .inputsDiv {
+        display: grid;
+        margin-right: 1em;
+        margin-bottom: 2em;
+        place-items: center;
+    }
+
+    .inputs {
+        border-radius: 65px;
+        width: 350px;
+        height: 45px;
+        background-color: var(--supportColor);
+        border: solid 1px var(--backgroundColor);
+        transition: 0.4s;
+        text-align: center;
+    }
+
+    .inputs:hover {
+        -webkit-box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
+        -moz-box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
+        box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
+        border: solid 0.5px var(--headerColor);
+    }
+</style>
+
+<body>
+    <form id="form">
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <div class="inputsDiv">
+                <label>Etiquta 1</label>
+                <input type="text" class="inputs">
+            </div>
+            <p></p>
+            <input class="inputs" type="submit" name="" id="">
+
+    </form>
+</body>
+
+</html>
