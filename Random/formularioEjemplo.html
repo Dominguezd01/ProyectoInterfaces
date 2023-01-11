@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="../JS/index.js" defer></script>
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="formularioejemplo.css" />
 </head>
 <style>
     :root {
@@ -16,96 +17,7 @@
         --supportColor: #A1B5D8;
     }
 
-    form {
-        display: grid;
-
-        margin: 20%;
-        margin-top: 3em;
-        padding: 1em;
-        background-color: var(--supportColor);
-        place-items: center;
-    }
-
-    .inputsDiv {
-        display: grid;
-        margin-right: 1em;
-        margin-bottom: 2em;
-        place-items: center;
-    }
-
-    .container {
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "input1 input2 input3"
-            "input4 input5 input6"
-            ". enviar .";
-    }
-
-    .input1 {
-        grid-area: input1;
-    }
-
-    .input2 {
-        grid-area: input2;
-    }
-
-    .input3 {
-        grid-area: input3;
-    }
-
-    .input4 {
-        grid-area: input4;
-    }
-
-    .input5 {
-        grid-area: input5;
-    }
-
-    .input6 {
-        grid-area: input6;
-    }
-
-    .enviar {
-        grid-area: enviar;
-    }
-
-    .inputs {
-        border-radius: 15px;
-        width: 100%;
-        height: 10%;
-        /*background-color: var(--supportColor);*/
-        border: solid 1px var(--backgroundColor);
-        transition: 0.4s;
-        text-align: center;
-    }
-
-    #submit {
-        background-color: var(--headerColor);
-        width: 350px;
-        height: 45px;
-        margin: 1em;
-        place-items: center;
-    }
-
-    #submit:hover {
-        background-color: var(--supportColor);
-    }
-
-    .inputs:hover {
-        -webkit-box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
-        -moz-box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
-        box-shadow: 2px 10px 19px 0px rgba(100, 111, 122, 1);
-        border: solid 0.5px var(--headerColor);
-    }
-
-    #container div{
-        width: 33%;
-    }
+    
 </style>
 
 <!--ESto es simplemente para ver si casca o no-->
@@ -139,38 +51,15 @@
             </nav>
         </header>
 
-        <form id="form">
-            <div class="container">
-                <div class="input1">
-                    <label>Etiquta 1</label>
-                    <input type="text" class="inputs">
-                </div>
-                <div class="input2">
-                    <label>Etiquta 1</label>
-                    <input type="text" class="inputs">
-                </div>
-                <div class="input3">
-                    <label>Etiquta 1</label>
-                    <input type="text" class="inputs">
-                </div>
-                <div class="input4"><label>Etiquta 1</label>
-                    <input type="text" class="inputs">
-                </div>
-                <div class="input5">
-                    <label>Etiquta 1</label>
-                    <input type="text" class="inputs">
-                </div>
-                <div class="input6">
-                    <label>Etiquta 1</label>
-                    <input type="text" class="inputs">
-                </div>
-                <div class="enviar">
-                    <input class="inputs" type="submit" name="" id="submit">
-                </div>
-            </div>
-
-
-        </form>
+        <div class="container">
+            <div class="input1"></div>
+            <div class="input2"></div>
+            <div class="input3"></div>
+            <div class="input4"></div>
+            <div class="input5"></div>
+            <div class="input6"></div>
+            <div class="enviar"></div>
+          </div>
 </body>
 
 </html>
