@@ -1,16 +1,19 @@
-index Layout: Hecho
+Footer miguel index logeado
 
-Login -> Form Layout: Hecho
 
-Registro -> Form Layout: Hecho
+index Layout: Miguel-> reviews texto footer
 
-Habitaciones Layout: Hecho
+Login -> Form Layout: Cano -> Entero
 
-Reservas -> Form Layout: Hecho
+Registro -> Form Layout: Cano -> Entero
 
-Contacto -> Form Layout: Hecho
+Habitaciones Layout: Fer -> Entero
 
-Pagina de admin -> Form Layout: Por definir
+Reservas -> Form Layout: Cano -> Entero
 
-Perfil (Mostrar datos) Layout: Hecho
+Contacto -> Form Layout: Cano -> Entero
+
+Pagina de admin -> Form Layout: Por definir Miguel
+
+Perfil (Mostrar datos) Layout: Fer -> Entero
 
