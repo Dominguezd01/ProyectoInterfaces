@@ -12,7 +12,8 @@ let botonPrev = document.getElementById("prev");
 let slides = document.getElementsByClassName("mySlides");
 showSlides();
 
-function botonDerecha() {
+function botonDerecha(e) {
+    
     slideIndex+2;
   showSlides();
 }
@@ -25,6 +26,7 @@ function botonIzquierda() {
 function showSlides() {
   
   for (let i = 0; i < slides.length; i++) {
+    
     slides[i].style.display = "none";
   }
   slideIndex++;
